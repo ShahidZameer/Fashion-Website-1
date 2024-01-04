@@ -1,0 +1,338 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+.navbar{
+    height: 50px; 
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:10px;
+}  
+.container{
+    overflow:hidden;
+}
+li:hover{
+    cursor:pointer;
+}
+li{
+    margin:20px; 
+    list-style: none; 
+    font-size: 20px;
+
+}
+.menu{
+    display:flex;
+    font-size: 25px;
+}
+.nav-icon{
+    font-size: 20px;
+}
+#icon{
+    padding-left: 10px;
+}
+.header{
+   background:rgb(222,224,226);
+    height:70vh;
+    display:flex;
+    justify-content: space-between; 
+}
+.content{
+    padding-top:140px;
+    padding-left: 140px;
+     
+}
+#header-h1{
+    width:70%;
+    padding-bottom:20px;
+}
+#header-btn{
+    padding:10px 15px;
+    font-weight: 600; 
+}
+.navbar .bars{
+    display: flex;
+    align-items: center;
+}
+img{
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+} 
+#menu-1{
+    position: absolute;
+    background:white;
+    width:250px;
+    height:400px;
+    top:0px;
+    left:0px; 
+    transform: translate(-300px); 
+    transition: all 1.5s;
+    color:white;  
+    
+}
+.collection{
+ display:none;  
+}
+#men-h3{ 
+    font-size:15px;
+    padding-top:5px;
+}
+
+.men-cloth .li{
+    padding-top:5px;
+    font-size: 12px;
+    
+
+}
+.menu-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px; 
+}
+.list-container{
+    padding:20px;
+    padding-top: 10px;
+    color:black;
+}
+#menu-h1{
+    padding-bottom:10px;
+}
+.list a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top:5px;
+     
+
+}
+.fa-solid:hover{
+    cursor:pointer;
+
+}
+.nav-icon{
+    display:flex;
+    align-items: center;
+}
+.nav-icon input{
+    padding:7px;
+    border:0.5px solid #ddd;
+    border-radius: 10px;
+    outline:0;
+    padding-left:10px; 
+    display:none;  
+
+}
+/* responsive layout */
+    //NAVBAR RESPONSIVE 1536PX LARGE SCREEN
+   @media only screen and (max-width:1536px) {
+    #header-img{
+        width:700px
+    }
+    .content{
+        font-size: 20px;
+    }
+    .fa-bars{
+        display:none;
+    }
+    .navbar{
+        justify-content: space-around;
+    }
+    
+
+    
+   }
+   @media only screen and (max-width:1280px) {
+    #header-img{
+       width:600px
+         
+    }
+    .content{
+        font-size: 25px;
+    }
+    .fa-bars{
+        display: block;
+    }
+   }
+// SHOPPING BOX RESPONSIVE HERE FOR TAPLET SCREEN
+   @media only screen and (max-width:1024px) {
+    li{
+        display:none;
+    }
+    .navbar{
+        justify-content:space-around; 
+          
+    } 
+    .shopping-container{
+        padding:0px;
+    }
+    /* #header-img{
+        display:none
+    } */
+    .header{
+        height: 50vh;
+    }
+    .content{
+        padding-left:50px; 
+        padding-top:80px; 
+        width:100%;
+    }
+    .fa-bars{
+        display: block;
+    }
+    
+
+}  
+//NAVBAR RESPONSIVE HERE FOR MOBILE SCREEN
+   @media only screen and (max-width:600px) {
+    li{
+        display: none;
+        
+    }
+    .footer{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .footer h1{
+        font-size:20px;
+        
+        
+    } 
+    .footer input{
+        width:100%;
+    }
+    
+    .navbar{
+        padding:0px;
+    }
+    .header{
+        height:45vh;
+    }  
+    .content{
+        padding-left:40px;
+        padding-top:50px;
+        font-size: 20px;
+        width:90%;
+    }
+    #header-img{
+        display:none;
+    }
+    .fa-bars{  
+        display:block;
+    }
+//Responsive Template End
+}
+//SHOPPING BOX STYLE
+.shopping-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-item:center;
+    padding-top:20px;
+    padding:90px;
+    
+}
+.shopping-container h3{
+    font-weight:bold;
+    flex-grow:1
+}
+.shopping-container p , a{
+    font-weight:700;
+    font-family:sans;
+}
+.box:hover{
+    cursor:pointer;
+}
+.box .flex{
+    display:flex;
+    padding-top:5px
+}
+.box .fa-heart{
+    font-size:20px; 
+    color:black;
+} 
+#black-heart{
+    display:none;
+}
+.box{ 
+    border:1px solid #ddd;
+    width:250px;
+    height:400px; 
+    margin:5px; 
+    margin-bottom:90px;
+}
+
+.button-sale{
+    position:absolute;
+    padding:14px;
+}
+a{
+    text-decoration:none;
+}
+#sale{
+    background:green;
+    padding:10px; 
+    color:yellow;    
+}
+h4{
+    text-align:center;
+    padding-top:40px;
+    font-size:40px;
+}    
+span{ 
+    color:red; 
+    font-family:cursive:
+}
+#heart-img{
+    filter:brightness(0);
+    width:20px;
+    height:20px;
+    background-size:cover;
+    object-fit:cover;
+    object-position:center;
+}  
+.fa-cart-shopping{
+    transition:all 0.9s
+} 
+.fa-cart-shopping:hover{
+    transform:scale(1.5) 
+} 
+//END
+/* footer desigin */
+.footer-container{
+    background:black;
+    height:200px; 
+    padding:120px;
+    color:white;
+    font-family:sans;
+    width:100%: ;
+    
+} 
+.footer h1{
+    width:30%;
+}
+.footer-input{
+    padding-top:40px;
+    display:flex;
+    flex-wrap:wrap;
+    align-item:center; 
+}
+
+.footer-input input{
+    padding:12px 30px;
+    background:rgba(0,0,0,0.10);
+    box-shadow:120px 140px 120px #000000, inset -120px 140px -150px #000000;
+
+}
+#footer-btn{
+    padding:10px;
+    font-weight:700;
+    
+}
+ 
+
+ 
+  
